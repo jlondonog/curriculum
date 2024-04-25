@@ -57,7 +57,7 @@ html{
 }
 /*inicio*/
 .inicio{
-    background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1)),
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
     background-size: cover;
     height: 100vh;
@@ -65,16 +65,15 @@ html{
     display: flex;
     align-items: center;
 }
-.inicio .contenedor-banner{
+.inicio .contenido-banner{
     padding: 20px;
     background-color: #1e2326;
     max-width: 350px;
     margin: auto;
     text-align: center;
     border-radius: 40px;
-
 }
-.inicio .contenedor-banner img{
+.inicio .contenido-banner img{
     margin-top: 40px;
     border: 10px solid #1cb698;
     display: block;
@@ -82,16 +81,16 @@ html{
     margin: auto;
     border-radius: 100%;
 }
-.inicio .contenedor-banner h1{
+.inicio .contenido-banner h1{
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Righteous';
 }
-.inicio .contenedor-banner h2{
+.inicio .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
 }
-.inicio .contenedor-banner .redes a{
+.inicio .contenido-banner .redes a{
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -104,7 +103,7 @@ html{
     font-size: 20px;
     transition: .3s;
 }
-.inicio .contenedor-banner .redes a:hover{
+.inicio .contenido-banner .redes a:hover{
     background-color: #1cb698;
 }
 /*Sobre mi*/
@@ -200,7 +199,7 @@ html{
     position: absolute;
     top: 0;
     left: 0;
-    width: 0%;
+    width: 0;
     height: 100%;
     background-color: #1cb698;
     z-index: -1;
