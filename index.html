@@ -6,179 +6,203 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Juan Pablo</title>
     <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
+    
     <!--Encabezado-->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Juan Pablo</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                </ul>
-            </nav> 
-             <div class="nav-responsive" onclick="mostrar0ocultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-             </div>
-        </header>
+            <header>
+                <div class="logo">
+                    <a href="#">Juan Pablo</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    </ul>
+                </nav> 
+                <div class="nav-responsive" onclick="mostrar0ocultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
     </div>  
 
     <!--Inicio-->
-     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="./img/persona.png" alt="">
+    <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="./img/persona.png" alt="">
+                </div>
+                <h1>Juan Pablo Londoño</h1>
+                <h2>Estudiante de Administracion de sistemas</h2>
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
-            <h1>Juan Pablo Londoño</h1>
-            <h2>Estudiante de Administracion de sistemas</h2>
-            <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-     </section>  
+    </section>  
 
-    <!--Sobre mi-->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mi</h2>
-            <p><span>Hola soy juan Pablo Londoño Grisales </span>estudiante de la fundacion universitaria comfamiliar actulmente estoy en 7mo semestre.
-            Al mismo tiempo estoy terminando las practicas para graduarme como tecnologo, dichas practicas las estoy realizando en la empresa On/Off
-            soluciones en linea donde me desempeño como ayudante en el area de operaciones.</p>
+    <div class="accordion" id="accordionExample">
+        <!--Acordeon sobre mi-->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2 class="contenido-seccion">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Sobre Mi
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div>
+                            <p><span>Hola soy juan Pablo Londoño Grisales </span>estudiante de la fundacion universitaria comfamiliar actulmente estoy en 7mo semestre.
+                                Al mismo tiempo estoy terminando las practicas para graduarme como tecnologo, dichas practicas las estoy realizando en la empresa On/Off
+                                soluciones en linea donde me desempeño como ayudante en el area de operaciones.</p>
+                        </div>
+                        <div class="contenido-seccion">    
+                            <div class="fila">
+                                <!--Datos personales-->
+                                <div class="col">
+                                    <h3>Datos personales</h3>
+                                    <ul>
+                                        <li>
+                                            <strong>Cumpleaños</strong>
+                                            08-05-1996
+                                        </li>
+                                        <li>
+                                            <strong>Telefono</strong>
+                                            3127288547
+                                        </li>
+                                        <li>
+                                            <strong>Email</strong>
+                                            jlondonog@uc.edu.co
+                                        </li>
+                                        <li>
+                                            <strong>Direccion</strong>
+                                            Transversal 73 #27-50 sector el oso cuba
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--Intereses-->
+                                <div class="col">
+                                    <h3>Intereses</h3>
+                                    <div class="contenedor-intereses">
+                                        <div class="intereses">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                            <span>JUEGOS</span> 
+                                        </div>
+                                        <div class="intereses">
+                                            <i class="fa-solid fa-person-running"></i>
+                                            <span>RUNNING</span> 
+                                        </div>
+                                        <div class="intereses">
+                                            <i class="fa-solid fa-futbol"></i>
+                                            <span>FUTBOOL</span> 
+                                        </div>
+                                        <div class="intereses">
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <span>MUSICA</span> 
+                                        </div>
+                                        <div class="intereses">
+                                            <i class="fa-solid fa-laptop"></i>
+                                            <span>PROGRAMAS</span> 
+                                        </div>
+                                        <div class="intereses">
+                                            <i class="fa-solid fa-motorcycle"></i>
+                                            <span>MOTOS</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-success">
+                                Descargar Hoja de Vida <i class="fa-solid fa-download"></i>
+                                <span class="overlay"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        <!--Acordeon Curriculum-->
+        <section id="sobremi" class="sobremi">
+            <div id="curriculum" class="curriculum">
+                <h2 class="contenido-seccion">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Curriculum
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="contenido-seccion">
+                            <div class="fila">
+                                <div class="col izquierda">
+                                    <h3>Educacion</h3>
+                                    <div class="item izq">
+                                        <h4>Tecnico en mantenimiento de motocicletas</h4>
+                                        <span class="lugar">AmericanBusinesScool - Sena</span>
+                                        <p>Aprendi sobre los componentes individuales de las motocicletas, cómo funcionan y cómo interactúan entre sí. Esto incluye motores, sistemas de transmisión, sistemas eléctricos, frenos, suspensión, entre otros.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq">
+                                        <h4>Prevenir fallas electricas</h4>
+                                        <span class="lugar">Sena</span>
+                                        <p> Aprendi los principios básicos de la electricidad, incluyendo voltaje, corriente, resistencia, circuitos eléctricos, y otros conceptos relevantes. Esto me permitio entender cómo funcionan los sistemas eléctricos y cómo pueden surgir fallas.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item izq">
+                                        <h4>Micro Soldadura</h4>
+                                        <span class="lugar">Academia Edgar Yo Reparo</span>
+                                        <p>Aprendi a utilizar equipos de micro soldadura diseñados específicamente para trabajar con componentes pequeños, como microscopios de aumento, lámparas de luz fría, estaciones de soldadura de precisión, entre otros.</p>
+                                        <div class="conectori">
+                                            <div class="circuloi"></div>
+                                        </div>
+                                    </div>
+                                </div>
             
-            <div class="fila">
-                <!--Datos personales-->
-                <div class="col">
-                    <h3>Datos personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            08-05-1996
-                        </li>
-                        <li>
-                            <strong>Telefono</strong>
-                            3127288547
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            jlondonog@uc.edu.co
-                        </li>
-                        <li>
-                            <strong>Direccion</strong>
-                            Transversal 73 #27-50 sector el oso cuba
-                        </li>
-                    </ul>
-                </div>
-                <!--Intereses-->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="intereses">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>JUEGOS</span> 
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-person-running"></i>
-                            <span>RUNNING</span> 
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-futbol"></i>
-                            <span>FUTBOOL</span> 
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span> 
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-laptop"></i>
-                            <span>PROGRAMAS</span> 
-                        </div>
-                        <div class="intereses">
-                            <i class="fa-solid fa-motorcycle"></i>
-                            <span>MOTOS</span> 
+                                <div class="col derecha">
+                                    <h3>Experiencia laboral</h3>
+                                    <div class="item der">
+                                        <h4>Tecnico</h4>
+                                        <span class="empresa">Auteco</span>
+                                        <p>Trabaje desempeñando una funcion de tecnico, aprendi a reparar motocicletas de la marca auteco y en general.</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item der">
+                                        <h4>Vendedor de repuestos</h4>
+                                        <span class="empresa">Auteco</span>
+                                        <p>Despues de un tiempo pase al area de repuestos donde vendia al publico exterior y a su vez en la parte interna de la empresa</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                    <div class="item der">
+                                        <h4>Asesor comercial</h4>
+                                        <span class="empresa">Auteco</span>
+                                        <p>Con la experiencia que tenia pase al area de ventas, ya no reparaba las motos si no que las vendia</p>
+                                        <div class="conectord">
+                                            <div class="circulod"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button>
-                Descargar Hoja de Vida <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
-        </div>
-    </section>
-
-    <!--Curriculum-->
-    <section id="curriculum" class="curriculum">
-        <dev class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educacion</h3>
-                    <div class="item izq">
-                        <h4>Tecnico en mantenimiento de motocicletas</h4>
-                        <span class="lugar">AmericanBusinesScool - Sena</span>
-                        <p>jjohigmwbhhhoyvghoxui</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Prevenir fallas electricas</h4>
-                        <span class="lugar">Sena</span>
-                        <p>jjohigmwbhhhoyvghoxui</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Micro Soldadura</h4>
-                        <span class="lugar">Academia Edgar Yo Reparo</span>
-                        <p>jjohigmwbhhhoyvghoxui</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia laboral</h3>
-                    <div class="item der">
-                        <h4>Tecnico</h4>
-                        <span class="empresa">Auteco</span>
-                        <p>jjohigmwbhhhoyvghoxui</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Vendedor de repuestos</h4>
-                        <span class="empresa">Auteco</span>
-                        <p>jjohigmwbhhhoyvghoxui</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Asesor comercial</h4>
-                        <span class="empresa">Auteco</span>
-                        <p>jjohigmwbhhhoyvghoxui</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </dev>
-
-    </section>
-
-     <!--Pie de pagina-->
-     <footer>
+        </section>
+    </div>   
+          
+    <!--Pie de pagina-->
+    <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
@@ -187,8 +211,10 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-     </footer>
+    </footer>
 
-     <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
